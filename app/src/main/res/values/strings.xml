@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Tab Layout Demo #2</string>
+    <string name="output_field_1">Output Field (Fragment One)</string>
+    <string name="output_field_2">Output Field (Fragment Two)</string>
+    <string name="output_text_1">Hello, World! (Fragment One)</string>
+    <string name="output_text_2">Hello, World! (Fragment Two)</string>
+    <string name="input_button">Click Me!</string>
+</resources>
