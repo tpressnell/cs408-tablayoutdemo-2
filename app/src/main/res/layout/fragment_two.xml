@@ -5,26 +5,116 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/outputField2"
+    <EditText
+        android:id="@+id/mealCost"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/output_field_2"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:text="@string/enter_meal_cost"
+        app:layout_constraintBottom_toTopOf="@+id/tipPercent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button"
+    <EditText
+        android:id="@+id/tipPercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:text="@string/input_button"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:text="@string/enter_tip_percent"
+        app:layout_constraintBottom_toTopOf="@+id/numPeople"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mealCost" />
+
+    <EditText
+        android:id="@+id/numPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="555dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:text="@string/enter_number_of_people"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/outputField2" />
+        app:layout_constraintTop_toBottomOf="@+id/tipPercent" />
+
+    <TextView
+        android:id="@+id/dollarSign"
+        android:layout_width="13dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="40dp"
+        android:text="@string/dollarSign"
+        app:layout_constraintBottom_toTopOf="@+id/percentSign"
+        app:layout_constraintEnd_toStartOf="@+id/mealCost"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/percentSign"
+        android:layout_width="13dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="618dp"
+        android:text="@string/percentSign"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tipPercent"
+        app:layout_constraintTop_toBottomOf="@+id/dollarSign" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="50dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="360dp"
+        app:layout_constraintGuide_end="0dp" />
+
+    <Button
+        android:id="@+id/calculateBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="479dp"
+        android:text="@string/calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numPeople" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="410dp"
+        android:text="@string/amount_per_person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>

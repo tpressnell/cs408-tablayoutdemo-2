@@ -5,4 +5,31 @@
     <string name="output_text_1">Hello, World! (Fragment One)</string>
     <string name="output_text_2">Hello, World! (Fragment Two)</string>
     <string name="input_button">Click Me!</string>
+    <string name="_0">0</string>
+    <string name="btnEquals">=</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
+    <string name="btnSquareRoot">√</string>
+    <string name="_6">6</string>
+    <string name="_4">4</string>
+    <string name="_5">5</string>
+    <string name="btnDivide">÷</string>
+    <string name="_1">1</string>
+    <string name="_2">2</string>
+    <string name="btnPlus">+</string>
+    <string name="_3">3</string>
+    <string name="btnSign">±</string>
+    <string name="btnDecimal">.</string>
+    <string name="btnMultiply">×</string>
+    <string name="btnMinus">-</string>
+    <string name="btnClear">C</string>
+    <string name="btnPercent">%</string>
+    <string name="calculate">Calculate</string>
+    <string name="enter_meal_cost">Enter Meal Cost</string>
+    <string name="enter_tip_percent">Enter Tip Percent</string>
+    <string name="enter_number_of_people">Enter number of people</string>
+    <string name="amount_per_person">Amount Per person</string>
+    <string name="dollarSign">$</string>
+    <string name="percentSign">%</string>
 </resources>
