@@ -20,6 +20,7 @@ public class FragmentOne extends Fragment implements TabFragment {
     private final String title = "Calculator";
     private TextView outputField;
     private Calculator calculator;
+    private TextView output;
 
     @Nullable
     @Override
@@ -31,6 +32,7 @@ public class FragmentOne extends Fragment implements TabFragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        output = view.findViewById(R.id.output);
 
         Field[] fields = R.id.class.getFields();
         for (int i = 0; i < fields.length; ++i) {
@@ -48,7 +50,6 @@ public class FragmentOne extends Fragment implements TabFragment {
 
         String button = ((Button) v).getText().toString();
         calculator.process(button);
-        TextView output = (TextView) v.findViewById(R.id.output);
         output.setText(calculator.getDisplay());
     }
 
